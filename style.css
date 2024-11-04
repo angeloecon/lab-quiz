@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Gabriela&family=Tiny5&display=swap');
+:root{
+  --color:  #fff; 
+  --sec-color: rgb(34, 212, 219);
+}
+
+*{
+  font-family: "Gabriela", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--color);
+}
+
+body{
+  text-align: center;
+  /* background: linear-gradient(240deg, rgb(232, 135, 232), pink, rgb(213, 112, 213)); */
+  /* background-image: ('./assets/moonlit-night-kimi-no-na-wa-moewalls-com.mp4');
+  background-repeat: no-repeat; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#myVideo {
+  position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100vw;
+    min-height: 100vh;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    z-index: -1;
+}
+
+div{
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border: 2px var(--sec-color) solid;
+  border-radius: 10px;
+  width: 70%;
+}
+
+h1{
+  text-decoration: underline 2px var(--sec-color);
+}
+img {
+  border-radius: 50%;
+  border: solid var(--sec-color) 2px;
+  animation: pampatuyokogpicture 2s 1;
+  animation-delay: 2000ms;
+  box-shadow: 2px 2px 10px 3px var(--sec-color);
+  transition: transform 200ms;
+}
+
+img:hover{
+  transform: scale(1.1);
+}
+
+p{
+  border: 2px solid var(--sec-color);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+table, td, th {
+  border: 2px solid var(--sec-color);
+  /* border-collapse: collapse; */
+  margin: auto;
+  border-radius: 10px;
+}
+
+th, td{
+  padding: 2px;
+  transition: 500ms ease-in;
+  transition: transform 500ms;
+}
+
+th{
+  font-weight: bold;
+}
+
+a{
+  text-decoration: none;
+  color: var(--color);
+  width: 100%;
+}
+
+td:hover{
+  transform: scale(1.1);
+  background-color: var(--sec-color);
+  border-radius: 10px;
+  color: var(--color);
+}
+
+@keyframes pampatuyokogpicture {
+  0%, 100% {
+    transform: rotateY(0deg);
+    height: 200px;
+}
+50% {
+    transform: rotateY(180deg);
+    height: 200px;
+}
+}
